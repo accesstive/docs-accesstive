@@ -1,0 +1,92 @@
+---
+title: "Fix Hub"
+description: "Assign, track, and close accessibility issues with your team, and get AI help to fix them."
+---
+
+**Fix Hub** collects every issue found by the [Scanner and Monitor](/monitor) in one place. You decide who fixes what, follow progress, and mark issues as done. Its motto is **Assign · Track · Verify · Close**.
+
+## Open Fix Hub
+
+1. Go to **FIX** → **Fix Hub**.
+2. Choose how to see your issues:
+   - **Table view**: a list you can sort and filter
+   - **Board view**: cards in three columns: **New**, **In Progress**, and **Completed**
+
+Fix Hub is empty until you have checked at least one page. Run a check in **FIND** → **Scanner** first.
+
+<Frame caption="Fix Hub in Board view">
+  <img src="/images/fix-hub/board-view.png" alt="Fix Hub Board view with New, In Progress, and Completed columns and filter chips" />
+</Frame>
+<Frame caption="Fix Hub in Table view">
+  <img src="/images/fix-hub/table-view.png" alt="Fix Hub Table view with Category, Impact, Level, Status filters and the issue list" />
+</Frame>
+
+## Find the right issues
+
+Use the filters to narrow the list:
+
+- **Category**: **Errors**, **Needs Review**, or **Passes**
+- **Impact**: **Critical**, **Serious**, **Moderate**, **Minor**, **Human review**, or **Passed**
+- **WCAG level**: A, AA, AAA, or **Best Practice**
+- **Assignee** and **Status**
+
+Fix **Critical** and **Serious** issues first. They block people the most.
+
+## Open an issue
+
+Click an issue to open its details. You see:
+
+- **Description**, **Why It Matters**, and **How to Fix**
+- **Disabilities Affected**
+- **Guidelines** (the WCAG rule) and a **Helpful URL**
+- **Affected Code**, the **Target** element, and a **Screenshot**
+- **Occurrences**: how often the issue appears
+
+<Frame caption="Issue details">
+  <img src="/images/fix-hub/issue-details.png" alt="Issue details panel with Assignee, Status, Impact, Category, Description, Tags, and How to Fix" />
+</Frame>
+
+## Assign and track work
+
+<Steps>
+  <Step title="Assign the issue">
+    In the issue details, use **Select Assignee** to pick a teammate. Add teammates first in [Team](/team).
+  </Step>
+  <Step title="Set the status">
+    Set **Status** to **New**, **In-Progress**, or **Complete**, then click **Update**. In **Board view** you can also drag a card to another column.
+  </Step>
+</Steps>
+
+## Fix with AI
+
+<Steps>
+  <Step title="Ask the AI">
+    In the issue details, click **Fix with AI**. Accesstive creates an **AI-Generated Solution** with an **Explanation** and **AI-Generated Code**.
+  </Step>
+  <Step title="Check the answer">
+    Read the suggestion carefully. If it does not fit, click **Regenerate with AI**.
+  </Step>
+  <Step title="Apply the fix yourself">
+    Copy the code and apply it in your own website. Accesstive never changes your website code by itself.
+  </Step>
+</Steps>
+
+Each AI request uses AI tokens from your plan. The panel shows **Token used for this request** and **Remaining token**. If you see "Insufficient tokens.", upgrade your plan in [Account / Billing](/billing).
+
+## Verify and close
+
+After your developer deploys a fix:
+
+1. Run **Run Accessibility Check** again in **FIND** → **Scanner**, or wait for the next Monitor check.
+2. If the issue no longer appears, set it to **Complete**.
+
+Every completed issue becomes part of your record of accessibility work. This record shows the work your team has done. It is not a legal compliance certificate.
+
+{/* TODO for product team: marketing says issues move to Completed automatically after a re-scan confirms the fix. The dashboard code changes status only by hand. Confirm the intended behavior. */}
+
+## Related
+
+- [Scanner and Monitor](/monitor) to find new issues
+- [Live Audit](/live-audit) to see an issue on the live page
+- [Team](/team) to add people you can assign
+- Product page: [Fix Hub](https://accesstive.com/fix-hub/)

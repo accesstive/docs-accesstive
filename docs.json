@@ -1,54 +1,232 @@
 {
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
-  "name": "Mintlify Starter Kit",
+  "name": "Accesstive Docs",
+  "description": "Accesstive documentation: install the widget, find and fix accessibility issues, document your work, and manage your account.",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#0101D9",
+    "light": "#EEF0FF",
+    "dark": "#0101D9"
   },
-  "favicon": "/favicon.svg",
-  "navigation": {
-    "pages": [
-      {
-        "group": "Getting Started",
-        "pages": [
-          "index",
-          "quickstart"
-        ]
+  "favicon": "/favicon.png",
+  "icons": {
+    "library": "lucide"
+  },
+  "appearance": {
+    "default": "system",
+    "strict": false
+  },
+  "styling": {
+    "eyebrows": "breadcrumbs",
+    "codeblocks": {
+      "theme": {
+        "light": "github-light",
+        "dark": "github-dark"
       }
-    ],
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
+    }
+  },
+  "fonts": {
+    "heading": {
+      "family": "Montserrat",
+      "weight": 700
+    },
+    "body": {
+      "family": "Montserrat",
+      "weight": 400
     }
   },
   "logo": {
     "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "dark": "/logo/dark.svg",
+    "href": "/"
   },
   "navbar": {
     "links": [
       {
+        "label": "Get started",
+        "href": "/getting-started"
+      },
+      {
+        "label": "Guides",
+        "href": "/dashboard"
+      },
+      {
+        "label": "FAQ",
+        "href": "/faq"
+      },
+      {
         "label": "Support",
-        "href": "mailto:support@mintlify.com"
+        "href": "mailto:info@accesstive.com"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Dashboard",
-      "href": "https://app.mintlify.com"
+      "label": "Get started",
+      "href": "/getting-started"
     }
+  },
+  "navigation": {
+    "groups": [
+      {
+        "group": "Home",
+        "icon": "house",
+        "expanded": true,
+        "pages": [
+          "index"
+        ]
+      },
+      {
+        "group": "Get started",
+        "icon": "rocket",
+        "expanded": true,
+        "pages": [
+          "getting-started",
+          "dashboard"
+        ]
+      },
+      {
+        "group": "FIND",
+        "icon": "search",
+        "expanded": true,
+        "pages": [
+          "monitor",
+          "live-audit",
+          "lighthouse",
+          "widget"
+        ]
+      },
+      {
+        "group": "FIX",
+        "icon": "wrench",
+        "expanded": true,
+        "pages": [
+          "fix-hub",
+          "alt-text",
+          "human-expert-audit"
+        ]
+      },
+      {
+        "group": "PROVE",
+        "icon": "badge-check",
+        "expanded": true,
+        "pages": [
+          "accessibility-statement",
+          "contrast-checker"
+        ]
+      },
+      {
+        "group": "Account",
+        "icon": "circle-user",
+        "expanded": true,
+        "pages": [
+          "team",
+          "billing",
+          "account",
+          "faq"
+        ]
+      }
+    ]
+  },
+  "footer": {
+    "socials": {
+      "website": "https://accesstive.com",
+      "x": "https://x.com/accesstive",
+      "linkedin": "https://www.linkedin.com/company/accesstive/",
+      "youtube": "https://www.youtube.com/@Accesstive-web-accessibility"
+    },
+    "links": [
+      {
+        "header": "Documentation",
+        "items": [
+          {
+            "label": "Get started",
+            "href": "/getting-started"
+          },
+          {
+            "label": "Dashboard tour",
+            "href": "/dashboard"
+          },
+          {
+            "label": "Scanner and Monitor",
+            "href": "/monitor"
+          },
+          {
+            "label": "Live Audit",
+            "href": "/live-audit"
+          },
+          {
+            "label": "Fix Hub",
+            "href": "/fix-hub"
+          },
+          {
+            "label": "Plans and billing",
+            "href": "/billing"
+          },
+          {
+            "label": "FAQ",
+            "href": "/faq"
+          }
+        ]
+      },
+      {
+        "header": "Product",
+        "items": [
+          {
+            "label": "Dashboard login",
+            "href": "https://dashboard.accesstive.com/app/"
+          },
+          {
+            "label": "Accessibility Widget",
+            "href": "https://accesstive.com/accessibility-widget/"
+          },
+          {
+            "label": "Pricing",
+            "href": "https://accesstive.com/pricing/"
+          },
+          {
+            "label": "Free Live Audit",
+            "href": "https://accesstive.com/live-audit/"
+          }
+        ]
+      },
+      {
+        "header": "Resources",
+        "items": [
+          {
+            "label": "Help Center",
+            "href": "https://accesstive.com/help-center/"
+          },
+          {
+            "label": "Schedule demo",
+            "href": "https://calendly.com/accesstive"
+          },
+          {
+            "label": "Contact support",
+            "href": "mailto:info@accesstive.com"
+          },
+          {
+            "label": "Privacy policy",
+            "href": "https://accesstive.com/privacy-policy/"
+          },
+          {
+            "label": "Imprint",
+            "href": "https://accesstive.com/imprint/"
+          }
+        ]
+      }
+    ]
+  },
+  "seo": {
+    "indexing": "all",
+    "metatags": {
+      "og:site_name": "Accesstive Docs",
+      "og:type": "website",
+      "og:locale": "en_US",
+      "twitter:card": "summary"
+    }
+  },
+  "metadata": {
+    "timestamp": false
   },
   "contextual": {
     "options": [
@@ -62,11 +240,11 @@
       "vscode"
     ]
   },
-  "footer": {
-    "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+  "errors": {
+    "404": {
+      "redirect": false,
+      "title": "Page not found",
+      "description": "This page does not exist in Accesstive Docs. [Go to homepage](/)."
     }
   }
 }

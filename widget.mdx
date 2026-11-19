@@ -1,0 +1,117 @@
+---
+title: "Accessibility Widget"
+description: "Install and customize the Accesstive Accessibility Widget so visitors can change how your website looks and reads."
+---
+
+The **Accessibility Widget** (also called **Access Assistant**) adds a small button to your website. Visitors click it to open a panel with tools such as bigger text, stronger contrast, a reading-friendly font, and highlighted links. It is included in every paid plan.
+
+<Warning>
+  The widget helps visitors, but it does not make your website compliant on its own. Use it together with [Scanner and Monitor](/monitor), [Fix Hub](/fix-hub), and expert review.
+</Warning>
+
+## What visitors can do
+
+The widget has 30+ adjustments, grouped into:
+
+- **Content and text**: text size, text magnifier, readable font (including a dyslexia-friendly font), line height, letter spacing, word spacing, highlighted headings and links
+- **Color and contrast**: contrast modes, color contrast, saturation, invert colors, blue-light filter, and color-blindness filters
+- **Navigation and focus**: keyboard navigation, larger cursor, reading aids, pause animations, mute sounds, and hide media
+- **Screen reader**: read page content aloud
+
+Visitors can also pick a ready-made **profile** that turns on several settings at once: Blind, Low Vision, Color Blind, Dyslexia, Cognitive & Learning, ADHD, Seizure & Epileptic, Motor Impaired, Elder, and Parkinson's Disease.
+
+{/* SCREENSHOT NOT POSSIBLE LOCALLY: images/widget/widget-panel.png — the open widget panel on a test website, showing profiles and feature tiles. */}
+
+### Privacy
+
+The widget does **not** set cookies. A visitor's choices are saved only in their own browser (local storage), so the settings stay when they move to another page or come back later. Visitors can undo all their changes with the **Reset** button in the widget.
+
+## Open the widget settings
+
+In the dashboard, open **FIND** → **Widget**. The page has tabs along the top. Make your changes, then click **Save Settings**. Your website shows the new settings on the next page load.
+
+<Frame caption="FIND → Widget → Widget Style">
+  <img src="/images/widget/widget-settings.png" alt="Widget settings with tabs, Save Settings button, Widget Style options, and a live preview" />
+</Frame>
+
+| Tab | What you can change |
+| --- | --- |
+| **Installation Guide** | Copy your install code and see other ways to install. See [Install the widget](#install-the-widget). |
+| **Widget Icon and Size** | Choose the button icon and its size: small, medium, or large. |
+| **Widget Position** | Place the button separately for **Desktop** and **Mobile**: left or right, at the top, middle, or bottom. Use **Exact Positioning (5px - 500px)** for fine control, or hide the button on desktop or mobile. |
+| **Widget Style** | Choose the main color (solid or gradient), the text color, and the **Widget Mode**: Light, Dark, or System (follows the visitor's device). |
+| **Widget Layout** | Choose how the panel looks: **Simple**, **Flexible**, **Minimal**, or **3 Column** layout. |
+| **Profile Selection** | Choose which profiles visitors can pick. |
+| **Widget Settings** | Turn on extra options, such as letting visitors move or drag the widget, a larger widget, tooltips, the widget mode switch, and the widget language. |
+| **Auto Fixes** | Let the widget fix common code problems on your pages. See [Auto Fixes](#auto-fixes). |
+| **Widget Branding** | Show your own brand name, website, and logo in the widget (white-label). Available on plans that include branding. |
+
+Below these sections you can also turn single widget features on or off.
+
+### Widget languages
+
+The widget is available in English, German, Danish, Dutch, French, Italian, Polish, Portuguese, Russian, Spanish, Swedish, and Turkish. Choose a fixed language in **Widget Settings**, or keep **Default** to follow your website's language.
+
+## Auto Fixes
+
+When you turn on **Auto Fixes** and save, the widget repairs common accessibility problems in your page code each time a page loads. It can add:
+
+- Image descriptions where they are missing or empty (it does not replace existing descriptions)
+- Names for unnamed graphics, links, and buttons
+- Form labels and required-field markers
+- Names for unlabeled fieldsets
+- Table headers
+- Hidden decorative icons inside named controls
+- Heading markup for text that looks like a heading
+- Titles for iframes
+- Names for video and audio
+- An "opens in a new window" hint for links that open a new tab
+- Keyboard access for clickable areas
+- The page language, when it is missing
+
+To stop Auto Fixes, turn the switch off and click **Save Settings**.
+
+<Note>
+  Auto Fixes only change what the visitor's browser shows. They do not change your website's source code. Fix the source too, using [Fix Hub](/fix-hub).
+</Note>
+
+## Install the widget
+
+Open **FIND** → **Widget** → **Installation Guide** and click **Copy**. Then paste the code just before the closing `</body>` tag of your website template:
+
+```html
+<!-- Accesstive Widget -->
+<script
+  async
+  src="https://cdn.accesstive.com/assistance.js"
+  type="module"
+  data-token="YOUR_TOKEN"
+></script>
+```
+
+Always use the code from your own dashboard. The `data-token` value connects the widget to your website and your settings.
+
+Other ways to install:
+
+- **Plugin or app**: WordPress, Shopify, and other platforms. See [Getting started](/getting-started#option-2-plugin-or-app-no-coding).
+- **Google Tag Manager**: a Custom HTML tag on All Pages. See [Getting started](/getting-started#option-3-google-tag-manager).
+- **Self-hosting**: Accesstive provides a package for your own server. Contact support from the **Installation Guide**.
+
+## Check the installation
+
+1. Open your website and look for the Accesstive button.
+2. Click it and try a profile or a feature.
+3. If the button does not show, check the browser console for errors and make sure the code is on every page.
+
+<Note>
+  The `www` and non-`www` versions of your domain count as the same website. You do not need to set up the widget twice.
+</Note>
+
+## Page limits
+
+Each plan covers the widget on a set number of pages on your website. See [Plans and billing](/billing#what-each-plan-includes). If your website grows past this limit, the Accesstive team contacts you about upgrading.
+
+## Learn more
+
+- [Accessibility Statement](/accessibility-statement): show a link to your statement inside the widget
+- Product page: [Accessibility Widget](https://accesstive.com/accessibility-widget/)

@@ -18,8 +18,12 @@
 
 ## Terminology
 
-{/* Add product-specific terms and preferred usage */}
-{/* Example: Use "workspace" not "project", "member" not "user" */}
+- Prefer marketed names: Accessibility Widget, Live Audit, Continuous Monitor, Fix Hub
+- Aliases (mention once when helpful): Access Assistant (widget), Access Monitor (monitor)
+- Product pillars in the dashboard: FIND, FIX, PROVE
+- Plans: Solo, Starter, Business, Growth
+- Trial length in docs: 14-day free trial (pricing page)
+- Do not claim legal compliance guarantees; records document work done, not compliance status
 
 ## Style preferences
 
