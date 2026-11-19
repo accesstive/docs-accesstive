@@ -1,36 +1,55 @@
 ---
 title: "Plans and billing"
-description: "Compare Accesstive plans, start or upgrade a subscription, see invoices, and cancel or renew in Account / Billing."
+description: "Compare Accesstive plans, start with the free trial, subscribe or upgrade, renew, and see invoices in Account / Billing."
 ---
 
-Accesstive plans are priced by the number of pages, not by website traffic. Each plan covers **one website**. You manage everything under **Account / Billing** in the dashboard.
+Accesstive plans are priced by the number of pages, not by website traffic. You manage your plan under **Account / Billing** in the dashboard.
 
-For current prices, see [accesstive.com/pricing](https://accesstive.com/pricing/). You can pay monthly or yearly. Yearly billing costs less.
+## Prices
 
-{/* TODO for product team: prices in the local plan data (Solo 16, Starter 49, Business 139, Growth 179 EUR/month) differ from the old docs (Starter 40, Business 115, Growth 198). Confirm before adding prices here. */}
+| Plan | Monthly billing | Annual billing | You save per year |
+| --- | --- | --- | --- |
+| **Solo** | €19 / month | €16 / month (€192 / year) | €36 |
+| **Starter** | €49 / month | €40 / month (€480 / year) | €108 |
+| **Business** | €139 / month | €115 / month (€1,380 / year) | €288 |
+| **Growth** | €239 / month | €198 / month (€2,376 / year) | €492 |
+
+Annual billing saves up to 18%.
+
+<Note>
+  Prices as shown on [accesstive.com/pricing](https://accesstive.com/pricing/). See that page for the latest prices.
+</Note>
 
 ## What each plan includes
 
 | | Solo | Starter | Business | Growth |
 | --- | --- | --- | --- | --- |
-| Best for | Accessibility essentials and light monitoring | Continuous monitoring | Fully managed accessibility | Multi-site teams |
-| Websites | 1 | 1 | 1 | 1 |
-| Widget on up to | 100 pages | 1,500 pages | 10,000 pages | 100,000 pages |
-| Monitored pages | 1 | 10 | 50 | 100 |
-| Live Audit | Home page only | 10 pages | 50 pages | 100 pages |
-| Team members | Owner only | 1 | 3 | 5 |
-| AI tokens (Fix with AI, alt text) | Not included | Included | Included | Included |
-| White-label widget branding | No | No | No | Yes |
+| Best for | Accessibility essentials | Continuous monitoring | Fully managed accessibility | Multi-site teams |
+| Accessibility Widget | Up to 100 pages | Up to 1,500 pages | Up to 10,000 pages | Up to 100,000 pages |
+| Monitoring (checked daily) | 1 page (your home page) | 10 pages | 50 pages | 100 pages |
+| Live Audit | Home page only | AI-powered, every page | AI + human review, every page | AI + human review, every page |
+| AI fix recommendations (**Fix with AI**) | No | Yes | Yes | Yes |
+| AI fix and audit credits (tokens) | None | 0.5M / month | 2M / month | 5M / month |
+| Human remediation support | No | No | On demand | Priority access |
+| Monthly audit reports (PDF export) | Yes | Yes | Yes | Yes |
+| Accessibility Conformance Report | No | No | Included | Included |
+| White-label widget and reporting | No | No | No | Yes |
+| Users | 1 | 1 | 3 | 5 |
+| Dedicated manager | No | No | Yes | Yes |
+| 2FA and SSO | No | No | No | Yes |
+| Support | Limited | Email and chat | Priority | Priority |
 
-Every paid plan includes the [Accessibility Widget](/widget), [Scanner and Monitor](/monitor), [Live Audit](/live-audit), [Fix Hub](/fix-hub), the [Accessibility Statement](/accessibility-statement) generator, and the [Color Contrast Checker](/contrast-checker).
+All plans include the dashboard, [Accessibility Statement](/accessibility-statement) generator, and [Color Contrast Checker](/contrast-checker). VPAT/ACR documentation, litigation support, and PDF remediation are available as paid services.
+
+The number of websites you can add depends on your plan. See the [pricing page](https://accesstive.com/pricing/).
 
 The **Free** plan lets you try the dashboard with limited features. It does not include monitored pages.
 
-{/* TODO for product team: please confirm the table above. It is based on the plan settings in the dashboard code. "Starter (Yearly)" lists 10 websites in the plan data, while the dashboard says "Each plan covers one site". */}
-
 ## Free trial
 
-Paid plans start with a **14-day free trial**. A banner in the dashboard shows how many trial days are left. When the trial ends, choose a plan to keep using paid features.
+New sign-ups get a **14-day Starter trial**, no card needed. A banner in the dashboard shows how many trial days are left. When the trial ends, choose a plan to keep using paid features.
+
+Plans bought in the dashboard are charged right away.
 
 ## See your plan
 
@@ -43,10 +62,6 @@ Click the plan to open **Subscription Details**. It shows the activation and exp
 
 <Frame caption="Account / Billing: your current plan">
   <img src="/images/billing/plan-card.png" alt="Plan & Billing page with the current plan card, renewal date, included limits, and View Invoices and Upgrade subscription buttons" />
-</Frame>
-
-<Frame caption="Account / Billing → View Invoices">
-  <img src="/images/billing/invoices.png" alt="Invoice list with plan, site name, dates, status, amount, and a View button" />
 </Frame>
 
 ## Subscribe or upgrade
@@ -73,27 +88,19 @@ If you are already on **Growth**, the highest plan, the page says so. For custom
 
 Open **Account / Billing** and click **View Invoices**. You see each payment with its plan, site, amount, and dates, and you can download the invoice.
 
-## Cancel your subscription
-
-The plan card does not have a cancel button yet. To cancel, email [info@accesstive.com](mailto:info@accesstive.com).
-
-{/* TODO for product team: cancelSubscriptionAction exists in code but no button or link calls it. Add the button, then document it here. */}
-
-After cancelling, your plan stays active until the end of the period you already paid for. After that, its status changes to **Canceled** and paid features stop.
+<Frame caption="Account / Billing → View Invoices">
+  <img src="/images/billing/invoices.png" alt="Invoice list with plan, site name, dates, status, amount, and a View button" />
+</Frame>
 
 ## Renew an expired plan
 
-If your plan ended, the dashboard shows "Your subscription has ended." Click **Renew** in the top bar, or **Renew subscription** in **Account / Billing**.
+If your plan ended, the dashboard shows "Your subscription has ended." Checks, Live Audit, and adding teammates stop until you renew. Click **Renew** in the top bar, or **Renew subscription** in **Account / Billing**.
 
 ## Add another website
 
-Each plan covers one website. To add another website, click **Add New Website** in **Account / Billing** (or in the website switcher at the top), then choose a plan for it.
+Click **Add New Website** in **Account / Billing** (or in the website switcher at the top). If your plan has a free website place, the site is added. Otherwise, choose a plan for it.
 
 If you are an agency or manage several brands, choose **Get in Touch** on the billing page for a custom offer.
-
-## Money-back guarantee
-
-After you subscribe, you can ask for a refund within **10 days** if you are not happy. Email [info@accesstive.com](mailto:info@accesstive.com).
 
 ## Agency and Enterprise
 
@@ -104,7 +111,7 @@ Ask for a quote on the [pricing page](https://accesstive.com/pricing/).
 
 ## Experts and add-ons
 
-From the **Business** plan up, you can book human experts for audits, fixes, VPAT/ACR documents, and help after a legal complaint. See [Human Expert Audit](/human-expert-audit) and [Expert Services](https://accesstive.com/expert-services/).
+Accesstive experts can audit your site by hand, help fix issues, create VPAT/ACR documents, and help after a legal complaint. See [Human Expert Audit](/human-expert-audit) and [Expert Services](https://accesstive.com/expert-services/).
 
 ## Support
 

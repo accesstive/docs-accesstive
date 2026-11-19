@@ -42,6 +42,8 @@ Click an issue to open its details. You see:
 - **Affected Code**, the **Target** element, and a **Screenshot**
 - **Occurrences**: how often the issue appears
 
+Use **Expand All** and **Collapse All** to open or close all sections of the issue at once.
+
 <Frame caption="Issue details">
   <img src="/images/fix-hub/issue-details.png" alt="Issue details panel with Assignee, Status, Impact, Category, Description, Tags, and How to Fix" />
 </Frame>
@@ -71,18 +73,34 @@ Click an issue to open its details. You see:
   </Step>
 </Steps>
 
-Each AI request uses AI tokens from your plan. The panel shows **Token used for this request** and **Remaining token**. If you see "Insufficient tokens.", upgrade your plan in [Account / Billing](/billing).
+Each AI request uses AI tokens from your plan (see [Plans and billing](/billing#what-each-plan-includes)). The panel shows **Token used for this request** and **Remaining token**. If you see "Insufficient tokens.", upgrade your plan in [Account / Billing](/billing).
 
 ## Verify and close
 
-After your developer deploys a fix:
+Fix Hub does not close issues by itself. You decide when an issue is done.
 
-1. Run **Run Accessibility Check** again in **FIND** → **Scanner**, or wait for the next Monitor check.
-2. If the issue no longer appears, set it to **Complete**.
+<Steps>
+  <Step title="Deploy the fix">
+    Your developer applies the fix on your website.
+  </Step>
+  <Step title="Check the page again">
+    Click **Run Accessibility Check** in **FIND** → **Scanner**, or wait for the next daily Monitor check.
+  </Step>
+  <Step title="Close what is gone">
+    If the issue no longer appears in the new results, set it to **Complete** yourself.
+  </Step>
+</Steps>
 
-Every completed issue becomes part of your record of accessibility work. This record shows the work your team has done. It is not a legal compliance certificate.
+<Warning>
+  **What a re-check does to your issues:**
 
-{/* TODO for product team: marketing says issues move to Completed automatically after a re-scan confirms the fix. The dashboard code changes status only by hand. Confirm the intended behavior. */}
+  - Issues that are **still found** go back to **New** and **Unassigned**, even if you had assigned them or set them to In-Progress or Complete.
+  - Issues that are **no longer found** are not closed automatically. They keep their current status until you change it.
+
+  Note who works on what before you run a new check, so you can assign the issues again if needed.
+</Warning>
+
+Completed issues show the work your team has done. This record is not a legal compliance certificate.
 
 ## Related
 

@@ -15,10 +15,10 @@ description: "Get Google Lighthouse scores for performance, accessibility, best 
     Click your website or a page in the page tree.
   </Step>
   <Step title="Start the scan">
-    If the page has no data yet, you see "This page isnt scanned yet". Click **Run Lighthouse Scan**.
+    If the page has no data yet, you see a message that the page is not scanned yet. Click **Run Lighthouse Scan**. You get a notification when the scan has started and when it is completed.
   </Step>
   <Step title="Read the scores">
-    See the four scores and the **Last check** date. Switch between **Mobile** and **Desktop** results. Open the report for each page to see what to improve.
+    See the four scores and the **Last check** date. Switch between **Mobile** and **Desktop** results.
   </Step>
 </Steps>
 
@@ -26,8 +26,19 @@ description: "Get Google Lighthouse scores for performance, accessibility, best 
   <img src="/images/lighthouse/overview.png" alt="Lighthouse module with Run Lighthouse Scan, Desktop and Mobile tabs, and four scores" />
 </Frame>
 
+## What the report shows
+
+- **Critical Issues**: the most important problems on the page
+- **Passed Audits**: checks the page passed
+- **Required Manual Audits**: checks a person must do by hand
+- **Not Applicable**: checks that do not apply to this page
+
+## Rating history
+
+See how your scores change over time. **Rating history for desktop** and **Rating history for mobile** show the average of all Lighthouse runs. Choose the time range: **Two Weeks**, **One Month**, **Two Month**, or **One Year**.
+
 <Note>
-  Scores can differ slightly from other Lighthouse tools, because results come from the official Lighthouse API and change from run to run.
+  Scores can differ slightly from other Lighthouse tools, because results change from run to run. A Lighthouse score is a quality indicator, not proof of legal compliance.
 </Note>
 
 ## Lighthouse or Scanner?

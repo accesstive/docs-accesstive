@@ -122,6 +122,7 @@
           "team",
           "billing",
           "account",
+          "notifications",
           "faq"
         ]
       }
@@ -161,6 +162,10 @@
           {
             "label": "Plans and billing",
             "href": "/billing"
+          },
+          {
+            "label": "Notifications and emails",
+            "href": "/notifications"
           },
           {
             "label": "FAQ",
