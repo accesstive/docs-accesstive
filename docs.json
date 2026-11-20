@@ -43,10 +43,6 @@
   "navbar": {
     "links": [
       {
-        "label": "Get started",
-        "href": "/getting-started"
-      },
-      {
         "label": "Dashboard tour",
         "href": "/dashboard"
       },
@@ -239,11 +235,7 @@
       "copy",
       "view",
       "chatgpt",
-      "claude",
-      "perplexity",
-      "mcp",
-      "cursor",
-      "vscode"
+      "claude"
     ]
   },
   "errors": {
@@ -252,5 +244,8 @@
       "title": "Page not found",
       "description": "This page does not exist in Accesstive Docs. [Go to homepage](/)."
     }
+  },
+  "search": {
+    "prompt": "Search Accesstive Docs..."
   }
 }
