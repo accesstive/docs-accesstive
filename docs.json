@@ -47,7 +47,7 @@
         "href": "/getting-started"
       },
       {
-        "label": "Guides",
+        "label": "Dashboard tour",
         "href": "/dashboard"
       },
       {
@@ -81,7 +81,8 @@
         "expanded": true,
         "pages": [
           "getting-started",
-          "dashboard"
+          "dashboard",
+          "coming-soon"
         ]
       },
       {
@@ -198,8 +199,8 @@
         "header": "Resources",
         "items": [
           {
-            "label": "Help Center",
-            "href": "https://accesstive.com/help-center/"
+            "label": "Getting started",
+            "href": "/getting-started"
           },
           {
             "label": "Schedule demo",

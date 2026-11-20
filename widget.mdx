@@ -9,26 +9,46 @@ The **Accessibility Widget** (also called **Access Assistant**) adds a small but
   The widget helps visitors, but it does not make your website compliant on its own. Use it together with [Scanner and Monitor](/monitor), [Fix Hub](/fix-hub), and expert review.
 </Warning>
 
-## What visitors can do
+## Install the widget
 
-The widget has more than 40 tools. You choose which ones visitors see (see [Turn single features on or off](#turn-single-features-on-or-off)).
+Open **FIND** → **Widget** → **Installation Guide** and click **Copy**. Then paste the code just before the closing `</body>` tag of your website template:
 
-| Group | Tools |
-| --- | --- |
-| **Text and reading** | Font size, zoom in and out, readable font (including a dyslexia-friendly font), font weight, line height, letter spacing, word spacing, text alignment, text magnifier, highlight headings, highlight links, dictionary, page summary, reading mode |
-| **Color and contrast** | Contrast, smart contrast, saturation, grayscale, invert colors, blur, blue-light filter (also by time or by sun position), color-blindness filters, dark and light mode, custom colors |
-| **Focus and navigation** | Keyboard navigation, page structure (headings, landmarks, links), reading guide, reading mask, mouse grid, enlarge buttons, cursor size and color, slow cursor |
-| **Sound, motion, and media** | Pause animations, mute sounds, hide images and media, captions |
-| **Voice and input** | Screen reader (read aloud), voice navigation (control the page by voice), talk and type (dictation), virtual keyboard |
-| **More** | Sign language font (shows text as fingerspelling hand signs), image descriptions, widget language |
+```html
+<!-- Accesstive Widget -->
+<script
+  async
+  src="https://cdn.accesstive.com/assistance.js"
+  type="module"
+  data-token="YOUR_TOKEN"
+></script>
+```
 
-Visitors can also pick a ready-made **profile** that turns on several settings at once: Blind, Low Vision, Color Blind, Dyslexia, Cognitive and Learning, ADHD, Seizure and Epileptic, Epilepsy, Motor Impaired, Elder, and Parkinson's Disease.
+Always use the code from your own dashboard. The `data-token` value connects the widget to your website and your settings.
 
-### Privacy
+### Other ways to install
 
-The widget does **not** set cookies. A visitor's choices are saved only in their own browser (local storage), so the settings stay when they move to another page or come back later. Visitors can undo all their changes with the **Reset** button in the widget.
+**Plugin or app (no coding).** The plugin or app is called **Accesstive Assistant**. It adds the Accessibility Widget to your site.
 
-## Open the widget settings
+- **WordPress**: In your WordPress admin, go to **Plugins** → **Add New**, search for "Accesstive Assistant", click **Install Now**, then **Activate**.
+- **Shopify**: In Shopify admin, go to **Apps** → **Shopify App Store**, search for "Accesstive Assistant", and click **Add app**. Follow the prompts.
+
+After activation, the widget loads by itself. Step-by-step guides for WordPress, TYPO3, Joomla, Shopware, Wix, Squarespace, Webflow, Divi, Strapi, Storyblok, Contentful, and Dreamweaver are on the [integrations page<span style={{position: "absolute", width: "1px", height: "1px", overflow: "hidden", clipPath: "inset(50%)", whiteSpace: "nowrap"}}> (opens in a new tab)</span>](https://accesstive.com/integration/). If you do not see your platform, use the script above, or email [info@accesstive.com](mailto:info@accesstive.com).
+
+**Google Tag Manager.** Create a **Custom HTML** tag, paste the code from the **Installation Guide**, set the trigger to **All Pages**, and publish.
+
+**Your own server.** Accesstive can provide a self-hosting package and help you set it up. Click **Contact Support for Self-Hosting** in the **Installation Guide**.
+
+## Check the installation
+
+1. Open your website and look for the Accesstive button.
+2. Click it and try a profile or a feature.
+3. If the button does not show, make sure the code is on every page. If it still does not show, email support, or ask your developer to look for errors in the browser.
+
+<Note>
+  The `www` and non-`www` versions of your domain count as the same website. You do not need to set up the widget twice.
+</Note>
+
+## Change the settings
 
 In the dashboard, open **FIND** → **Widget**. The page has tabs along the top. Make your changes, then click **Save Settings**. Your website shows the new settings on the next page load.
 
@@ -60,7 +80,9 @@ The widget is available in English, German, Danish, Dutch, French, Italian, Poli
 
 ## Auto Fixes
 
-When you turn on **Auto Fixes** and save, the widget repairs common accessibility problems in your page code each time a page loads. It can add:
+When you turn on **Auto Fixes** and save, the widget repairs common accessibility problems in your page code each time a page loads.
+
+<Accordion title="What Auto Fixes can add">
 
 - Image descriptions where they are missing or empty (it does not replace existing descriptions)
 - Names for unnamed graphics, links, and buttons
@@ -75,43 +97,36 @@ When you turn on **Auto Fixes** and save, the widget repairs common accessibilit
 - Keyboard access for clickable areas
 - The page language, when it is missing
 
+</Accordion>
+
 To stop Auto Fixes, turn the switch off and click **Save Settings**.
 
 <Note>
   Auto Fixes only change what the visitor's browser shows. They do not change your website's source code. Fix the source too, using [Fix Hub](/fix-hub).
 </Note>
 
-## Install the widget
+## What visitors can do
 
-Open **FIND** → **Widget** → **Installation Guide** and click **Copy**. Then paste the code just before the closing `</body>` tag of your website template:
+The widget has many tools. You choose which ones visitors see (see [Turn single features on or off](#turn-single-features-on-or-off)).
 
-```html
-<!-- Accesstive Widget -->
-<script
-  async
-  src="https://cdn.accesstive.com/assistance.js"
-  type="module"
-  data-token="YOUR_TOKEN"
-></script>
-```
+<Accordion title="See all widget tools and profiles">
 
-Always use the code from your own dashboard. The `data-token` value connects the widget to your website and your settings.
+| Group | Tools |
+| --- | --- |
+| **Text and reading** | Font size, zoom in and out, readable font (including a dyslexia-friendly font), font weight, line height, letter spacing, word spacing, text alignment, text magnifier, highlight headings, highlight links, dictionary, page summary, reading mode |
+| **Color and contrast** | Contrast, smart contrast, saturation, grayscale, invert colors, blur, blue-light filter (also by time or by sun position), color-blindness filters, dark and light mode, custom colors |
+| **Focus and navigation** | Keyboard navigation, page structure (headings, landmarks, links), reading guide, reading mask, mouse grid, enlarge buttons, cursor size and color, slow cursor |
+| **Sound, motion, and media** | Pause animations, mute sounds, hide images and media, captions |
+| **Voice and input** | Screen reader (read aloud), voice navigation (control the page by voice), talk and type (dictation), virtual keyboard |
+| **More** | Sign language font (shows text as fingerspelling hand signs), image descriptions, widget language |
 
-Other ways to install:
+Visitors can also pick a ready-made **profile** that turns on several settings at once: Blind, Low Vision, Color Blind, Dyslexia, Cognitive and Learning, ADHD, Seizure and Epileptic, Epilepsy, Motor Impaired, Elder, and Parkinson's Disease.
 
-- **Plugin or app**: WordPress, Shopify, and other platforms. See [Getting started](/getting-started#option-2-plugin-or-app-no-coding).
-- **Google Tag Manager**: a Custom HTML tag on All Pages. See [Getting started](/getting-started#add-accesstive-to-your-website).
-- **Self-hosting**: Accesstive provides a package for your own server. Contact support from the **Installation Guide**.
+</Accordion>
 
-## Check the installation
+### Privacy
 
-1. Open your website and look for the Accesstive button.
-2. Click it and try a profile or a feature.
-3. If the button does not show, check the browser console for errors and make sure the code is on every page.
-
-<Note>
-  The `www` and non-`www` versions of your domain count as the same website. You do not need to set up the widget twice.
-</Note>
+The widget does **not** set cookies. A visitor's choices are saved only in their own browser (local storage), so the settings stay when they move to another page or come back later. Visitors can undo all their changes with the **Reset** button in the widget.
 
 ## Page limits
 
@@ -120,4 +135,4 @@ Each plan covers the widget on a set number of pages on your website. See [Plans
 ## Learn more
 
 - [Accessibility Statement](/accessibility-statement): show a link to your statement inside the widget
-- Product page: [Accessibility Widget](https://accesstive.com/accessibility-widget/)
+- Product page: [Accessibility Widget<span style={{position: "absolute", width: "1px", height: "1px", overflow: "hidden", clipPath: "inset(50%)", whiteSpace: "nowrap"}}> (opens in a new tab)</span>](https://accesstive.com/accessibility-widget/)
