@@ -5,3 +5,12 @@
 # Draft content
 drafts/
 *.draft.mdx
+
+# Internal agent/authoring instructions - never publish
+AGENTS.md
+
+# Repo housekeeping files - not docs pages
+README.md
+LICENSE
+.gitignore
+.DS_Store

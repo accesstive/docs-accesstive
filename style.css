@@ -1,0 +1,5 @@
+/* Hide the "Powered by Mintlify" footer link */
+a[href*="utm_campaign=poweredBy"],
+a[href*="mintlify.com?utm_campaign=poweredBy"] {
+  display: none !important;
+}
