@@ -3,3 +3,262 @@ a[href*="utm_campaign=poweredBy"],
 a[href*="mintlify.com?utm_campaign=poweredBy"] {
   display: none !important;
 }
+
+/* Compact footer, styled like docs.t3planet.com (ClickUp 14zervz0n5q):
+   logo, link columns (max 4 links each) and social icons, soft tinted band. */
+footer#footer {
+  /* light mode: pale band with a soft brand-blue glow, like docs.t3planet.com */
+  background: linear-gradient(180deg, rgba(1, 1, 217, 0.06) 0%, rgba(1, 1, 217, 0) 55%), #f8fafc;
+  border-top-color: rgba(1, 1, 217, 0.1) !important;
+}
+.dark footer#footer {
+  /* dark mode: navy band with a soft blue glow, like docs.t3planet.com */
+  background: linear-gradient(180deg, rgba(61, 126, 255, 0.1) 0%, rgba(0, 0, 0, 0) 55%), #0b1220;
+  border-top-color: rgba(96, 140, 255, 0.18) !important;
+}
+footer#footer > div {
+  padding-top: 1.75rem !important;
+  padding-bottom: 1.25rem !important;
+  gap: 1.25rem !important;
+}
+footer#footer > div > div:first-child {
+  align-items: flex-start;
+  gap: 1.5rem !important;
+}
+footer#footer > div > div:first-child > div:first-child {
+  min-width: 0 !important;
+  gap: 0 !important;
+}
+footer#footer img.nav-logo {
+  height: 22px !important;
+}
+/* links in one row, never cut off */
+footer#footer a.max-w-36 {
+  max-width: none;
+  overflow: visible;
+  text-overflow: clip;
+  white-space: nowrap;
+  font-size: 0.875rem;
+  color: #4b5563 !important; /* readable gray, 7:1 on the light band */
+}
+.dark footer#footer a.max-w-36 {
+  color: #d1d5db !important;
+}
+footer#footer a.max-w-36:hover,
+footer#footer a.max-w-36:focus-visible {
+  color: #0101D9 !important;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+/* columns: max 4 links each, tight spacing like T3Planet */
+footer#footer div:has(> a.max-w-36) {
+  gap: 0.625rem !important;
+}
+footer#footer div:has(> a.max-w-36) > p {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 0.375rem;
+}
+footer#footer div:has(> div > a.max-w-36) {
+  align-items: flex-start !important;
+}
+footer#footer div[style*="grid-template-columns"] {
+  gap: 1.5rem 2rem !important;
+}
+/* social icons: small round buttons like T3Planet */
+footer#footer a.h-fit[aria-label] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem !important;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(15, 23, 42, 0.1);
+  background: #fff;
+}
+.dark footer#footer a.h-fit[aria-label] {
+  border-color: rgba(255, 255, 255, 0.12);
+  background: transparent;
+}
+footer#footer a.h-fit[aria-label] svg {
+  width: 1rem;
+  height: 1rem;
+}
+footer#footer div:has(> a.h-fit[aria-label]) {
+  gap: 0.5rem !important;
+  min-width: 0 !important;
+}
+/* bottom bar (theme switch) tighter */
+footer#footer > div > .h-px {
+  margin: 0;
+}
+@media (max-width: 767px) {
+  footer#footer > div {
+    padding-left: 1.25rem !important;
+    padding-right: 1.25rem !important;
+  }
+  footer#footer > div > div:first-child {
+    gap: 1rem !important;
+    align-items: stretch;
+  }
+  footer#footer > div > div:first-child > div:first-child {
+    width: 100%;
+    gap: 1rem !important;
+  }
+  footer#footer img.nav-logo {
+    height: 20px !important;
+  }
+  /* two link columns side by side on phones */
+  footer#footer div[style*="grid-template-columns"] {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 1.25rem 1rem !important;
+  }
+  footer#footer a.h-fit[aria-label] {
+    width: 1.875rem;
+    height: 1.875rem !important;
+  }
+}
+
+/* Dark mode blue effect (like docs.t3planet.com dark mode).
+   Only background tints and borders change; text colors stay as Mintlify sets them,
+   so contrast stays WCAG AA. Light mode is not touched. */
+html.dark body {
+  background-color: #0b0f1a !important;
+  background-image:
+    radial-gradient(1100px 520px at 12% -8%, rgba(1, 1, 217, 0.22), transparent 60%),
+    radial-gradient(900px 480px at 92% -12%, rgba(61, 126, 255, 0.12), transparent 60%),
+    linear-gradient(180deg, #0d1424 0%, #0b0f1a 420px) !important;
+  background-attachment: fixed !important;
+}
+html.dark #navbar {
+  background-color: rgba(13, 20, 38, 0.88);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+html.dark #navbar > div:first-child {
+  border-bottom-color: rgba(96, 140, 255, 0.16) !important;
+}
+html.dark #sidebar-content {
+  background: linear-gradient(180deg, rgba(23, 33, 64, 0.55), rgba(17, 24, 39, 0.35));
+  border: 1px solid rgba(96, 140, 255, 0.14);
+}
+/* tables and cards get a faint blue edge */
+html.dark #content-area table th {
+  border-bottom-color: rgba(96, 140, 255, 0.25) !important;
+}
+html.dark #content-area a.card,
+html.dark #content-area [class*="card"] {
+  border-color: rgba(96, 140, 255, 0.18);
+}
+/* footer icon buttons on the navy band */
+html.dark footer#footer a.h-fit[aria-label] {
+  border-color: rgba(96, 140, 255, 0.22);
+  background: rgba(255, 255, 255, 0.03);
+}
+html.dark footer#footer > div > .h-px {
+  background-color: rgba(96, 140, 255, 0.14);
+}
+/* lighter social icons on the dark band (3:1 or more for icons) */
+html.dark footer#footer a.h-fit[aria-label] svg {
+  color: #cbd5e1;
+}
+html.dark footer#footer a.h-fit[aria-label] svg[class*="bg-"],
+html.dark footer#footer a.h-fit[aria-label] svg[style*="mask"] {
+  background-color: #cbd5e1 !important;
+}
+
+/* Light mode blue effect (same idea as dark mode, kept very soft).
+   Only backgrounds and borders change; text colors stay the same, so contrast stays WCAG AA. */
+html:not(.dark) body {
+  background-color: #ffffff !important;
+  background-image:
+    radial-gradient(1100px 520px at 12% -8%, rgba(1, 1, 217, 0.07), transparent 60%),
+    radial-gradient(900px 480px at 92% -12%, rgba(61, 126, 255, 0.06), transparent 60%),
+    linear-gradient(180deg, #f6f8ff 0%, #ffffff 420px) !important;
+  background-attachment: fixed !important;
+}
+html:not(.dark) #navbar {
+  background-color: rgba(255, 255, 255, 0.86);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+}
+html:not(.dark) #navbar > div:first-child {
+  border-bottom-color: rgba(1, 1, 217, 0.1) !important;
+}
+html:not(.dark) #sidebar-content {
+  background: linear-gradient(180deg, rgba(1, 1, 217, 0.035), rgba(1, 1, 217, 0.012));
+  border: 1px solid rgba(1, 1, 217, 0.09);
+}
+html:not(.dark) #content-area table th {
+  border-bottom-color: rgba(1, 1, 217, 0.2) !important;
+}
+html:not(.dark) #content-area a.card,
+html:not(.dark) #content-area [class*="card"] {
+  border-color: rgba(1, 1, 217, 0.14);
+}
+html:not(.dark) footer#footer > div > .h-px {
+  background-color: rgba(1, 1, 217, 0.1);
+}
+html:not(.dark) footer#footer a.h-fit[aria-label] {
+  border-color: rgba(1, 1, 217, 0.14);
+}
+
+/* Sidebar as a soft card (both modes): small gap under the header so the top items
+   are fully visible, and inner padding so the active item never touches the edge. */
+#sidebar-content {
+  top: 0.75rem !important;
+  bottom: 0.75rem !important;
+  border-radius: 12px;
+  overflow: hidden;
+}
+#sidebar-content > div:first-child {
+  padding: 0.75rem 0.5rem 2.5rem 0.5rem !important;
+  /* fade items out under the top edge instead of a solid white/black strip */
+  -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 0.75rem);
+  mask-image: linear-gradient(to bottom, transparent 0, #000 0.75rem);
+}
+/* Mintlify's solid top fade strip clashes with the tinted card, so hide it */
+#sidebar .sticky.top-0.h-8.pointer-events-none {
+  background: none !important;
+}
+
+/* Header with a visible brand-blue band (both modes), matching the sidebar card and footer.
+   #navbar-transition is Mintlify's own header background layer (it changes on scroll),
+   so it is styled too, with !important, so Mintlify cannot cover the tint. */
+html:not(.dark) #navbar {
+  background:
+    radial-gradient(700px 120px at 10% 0%, rgba(1, 1, 217, 0.08), transparent 70%),
+    linear-gradient(180deg, rgba(1, 1, 217, 0.06) 0%, rgba(1, 1, 217, 0.025) 100%),
+    rgba(248, 250, 255, 0.92) !important;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+html.dark #navbar {
+  background:
+    radial-gradient(700px 120px at 10% 0%, rgba(1, 1, 217, 0.35), transparent 70%),
+    linear-gradient(180deg, rgba(61, 126, 255, 0.14) 0%, rgba(61, 126, 255, 0.04) 100%),
+    rgba(11, 18, 32, 0.92) !important;
+  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(12px);
+}
+#navbar #navbar-transition {
+  background: transparent !important;
+}
+html:not(.dark) #navbar #navbar-transition {
+  border-bottom: 1px solid rgba(1, 1, 217, 0.16) !important;
+}
+html.dark #navbar #navbar-transition {
+  border-bottom: 1px solid rgba(96, 140, 255, 0.26) !important;
+}
+/* search box sits on the band like a card */
+html:not(.dark) #navbar #search-bar-entry {
+  background-color: #ffffff !important;
+  border-color: rgba(1, 1, 217, 0.16) !important;
+}
+html.dark #navbar #search-bar-entry {
+  background-color: rgba(255, 255, 255, 0.04) !important;
+  border-color: rgba(96, 140, 255, 0.24) !important;
+}

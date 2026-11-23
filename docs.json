@@ -145,24 +145,8 @@
             "href": "/dashboard"
           },
           {
-            "label": "Scanner and Monitor",
-            "href": "/monitor"
-          },
-          {
-            "label": "Live Audit",
-            "href": "/live-audit"
-          },
-          {
-            "label": "Fix Hub",
-            "href": "/fix-hub"
-          },
-          {
             "label": "Plans and billing",
             "href": "/billing"
-          },
-          {
-            "label": "Notifications and emails",
-            "href": "/notifications"
           },
           {
             "label": "FAQ",
@@ -194,10 +178,6 @@
       {
         "header": "Resources",
         "items": [
-          {
-            "label": "Getting started",
-            "href": "/getting-started"
-          },
           {
             "label": "Schedule demo",
             "href": "https://calendly.com/accesstive"
